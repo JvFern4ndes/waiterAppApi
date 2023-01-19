@@ -30,5 +30,10 @@ export const Product = model('Product', new Schema({
         required: true,
       },
     }],
-  }
+  },
+  category: {
+    type: Schema.Types.ObjectId,
+    required: true,
+    ref: 'Category',
+  },
 }));
