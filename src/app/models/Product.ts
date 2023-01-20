@@ -20,7 +20,6 @@ export const Product = model('Product', new Schema({
   ingredients: {
     required: true,
     type: [{
-      required: true,
       name: {
         type: String,
         required: true
